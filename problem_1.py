@@ -1,24 +1,30 @@
-"""
-*
-**
-*  *
-*   *
-*  *
-* *
-*
+"""54321
+   4321
+   321
+   21
+   1
 
+for i in range(5,0,-1):
+    for j in range(i,0,-1):
+        print(j,end=" ")
+    print()
 """
-for i in range(1,5):
-    for j in range(1,i+1):
-        if(j==1 or i==j):
-            print("*",end="")
+
+string = "ababa"
+dictt = {}
+ele = ""
+for i in range(0,len(string)):
+    for j in range(0,len(string)):
+        ele=string[i:j+1]
+        if ele in dictt:
+            dictt[ele]+=1
         else:
-            print(" ",end="")
-    print()
-for i in range(1,4):
-    for j in range(i,4):
-        if(j==1 or j==4-i):
-            print("*",end="")
-        else:
-            print(" ",end="")
-    print()
+            dictt[ele]=1
+print(dictt)
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
